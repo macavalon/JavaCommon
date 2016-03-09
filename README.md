@@ -43,7 +43,11 @@ mReporter.setType("wwwcrawler");
 mReporter.report("some useful output",true);
 
 
+
 profiler Profiler = new profiler();
+
+Boolean live = true; // dbConnection internally supports two database urls, usernames, passwords
+
 final dbConnection db_connection = new dbConnection(live,mReporter,Profiler);
         
 ```
